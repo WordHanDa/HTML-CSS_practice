@@ -1,0 +1,14 @@
+.sub-menu {
+    position: absolute;
+    left: 50%;
+    background-color: rgba(235, 235, 235, 0.8);
+    width: 150%;
+    text-align: center;
+    transform: translate(-50%, -150%);
+    transition: .5s;
+    z-index: -1;
+}
+.main-menu li:hover .sub-menu {
+    transform: translate(-50%, 0);
+}
+  
