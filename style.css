@@ -3,66 +3,224 @@
     margin: 0;
 }
 header{
-    background-color: black;
-    height: 50px;
+    background-color: rgba(246, 246, 246, 0.99);
+    height: 45px;
     width: 100%;
+    font-size: 12px;
+    position: fixed;
+}
+.sub-menu {
+    margin-top: 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 40vh;
+    background-color: rgba(246, 246, 246, 0.99);
+    text-align: left;
+    transform: translateY(-100%);
+    transition: .5s;
+    z-index: -1;
+    display: block;
+}
+.sub-menu li{
+    display: block;
+    margin: 5px 0;
+}
+.main-menu li:hover .sub-menu {
+    transform: translateY(0);
+}
+.apple-logo{
+    font-size: 18px;
+    text-decoration: none;
+}
+header h1 {
+    color:rgba(95, 95, 95, 0);
+    font-size: 20px;
+    position: absolute;
+    left: 15vw;
+    top: 0;
+    line-height: 50px;
 }
 header a{
-    color:white;
+    color:rgb(32, 32, 32);
     text-decoration: none;
 }
 header a:hover{
     text-decoration: underline;
 }
+header h2{
+    font-size: 30px;
+}
 header li{
-    display: inline;
+    display: inline-block;
     margin-right: 4vw;
 }
 header ul {
     position: absolute;
-    right: 5vw;
+    right: 0;
+    left: 0; /* 添加 left 属性以实现居中对齐 */
     top: 0;
-    line-height: 50px;
+    line-height: 45px;
+    text-align: center;
+    width: 100%;
 }
-h1 {
-    position: absolute;
-    color:white;
-    left: 120px;
-    top: 0;
-    line-height: 50px;
-}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
-.news{
-    background-color: antiquewhite;
+.trade {
+    background-color: rgb(255, 255, 255);
     color: black;
-    height: 95vh;
-    background-image: url(image/w22345678.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 85px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 9px;
+    
+}
+.trade h2{
+    margin-top: 45px;
+    font-weight: normal;
+}
+.trade a{
+    text-decoration: none;
+    color: rgb(34, 125, 205);
+}
+.trade a:hover{
+    text-decoration: underline;
+}
+.news{
+    background-color: rgb(242, 242, 242);
+    background-image: url("image/hero_bts2023_startframe__f787lg06y3ue_largetall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    height: 74vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
 }
 .news h2{
-    font-size: 40px;
-    
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: 500;
     color: black;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
 }
-.news blockquote{
+.news h3{
+    font-size: 24px;
+    font-weight: normal;
     color: black;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.news a {
+    margin-top: 15px;
     font-size: 18px;
-    margin: 25px 0;
 }
 .news a{
-    color: gray;
+    color: rgb(34, 125, 205);
     text-decoration: none;
-    border: 1px solid gray;
-    padding: 10px 20px;
-    border-radius: 5px;
 }
-.slogan{
-    background-color: white;
+.news a:hover{
+    text-decoration: underline;
+}
+.macbookAir {
+    margin-top: 12px;
+    background-color: rgb(242, 242, 242);
+    background-image: url("image/hero_macbook_air_15_midnight__ct0pgwizvree_largetall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    height: 74vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+}
+.macbookAir h2{
+    margin-top: 50px;
+    font-size: 55px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.macbookAir h3{
+    font-size: 24px;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+.macbookAir li{
+    display: inline;
+    text-align: center;
+    margin: 20px;
+    
+}
+.macbookAir a{
+    font-size: 18px;
+    color: rgb(34, 125, 205);
+    text-decoration: none;
+}
+.macbookAir a:hover{
+    text-decoration: underline;
+}
+.iPhone14 {
+    margin-top: 12px;
+    background-color: rgb(242, 242, 242);
+    background-image: url("image/hero_iphone14_yellow__eun20sn4imi6_mediumtall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    height: 74vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+}
+.iPhone14 h2{
+    margin-top: 50px;
+    font-size: 55px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.iPhone14 h3{
+    font-size: 24px;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+.iPhone14 li{
+    display: inline;
+    text-align: center;
+    margin: 20px;
+    
+}
+.iPhone14 a{
+    font-size: 18px;
+    color: rgb(34, 125, 205);
+    text-decoration: none;
+}
+.iPhone14 a:hover{
+    text-decoration: underline;
 }
